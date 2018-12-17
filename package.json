@@ -1,0 +1,23 @@
+{
+  "name": "auction-app",
+  "version": "1.0.0",
+  "description": "Aplication for a auction management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonbaggio/auction-app.git"
+  },
+  "author": "nelson.baggio@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonbaggio/auction-app/issues"
+  },
+  "homepage": "https://github.com/nelsonbaggio/auction-app#readme",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  }
+}
