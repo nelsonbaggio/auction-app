@@ -16,17 +16,17 @@ module.exports = [
         method: 'PUT',
         path: '/user/{id?}',
         handler: controller.save,
-        // config: {
-        //     validate: {
-        //         payload: {
-        //             name: Joi.string().required(),
-        //             username: Joi.string().required(),
-        //             password: Joi.string().required(),
-        //             email: Joi.string().email().required(),
-        //             cpf: Joi.string().required(),
-        //             scope: Joi.alternatives(Joi.array(), Joi.string()).required()
-        //         }
-        //     }
-        // }
+        config: {
+            validate: {
+                payload: {
+                    name: Joi.string().required(),
+                    username: Joi.string().required(),
+                    password: Joi.string().required(),
+                    email: Joi.string().email().required(),
+                    cpf: Joi.string().required(),
+                    scope: Joi.alternatives(Joi.array(), Joi.string()).required()
+                }
+            }
+        }
     }
 ]
