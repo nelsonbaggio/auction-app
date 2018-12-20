@@ -1,0 +1,24 @@
+<thf-page-list 
+  t-title= "Usuarios"
+  [t-actions]="pageActions"
+  >
+
+  <thf-table
+    t-checkbox=true
+    t-single-select=true
+    [t-actions]="tableActions"
+    [t-columns]="columns"
+    [t-items]="users">
+  </thf-table>
+
+</thf-page-list>
+
+<thf-modal #delete 
+  t-close 
+  t-size="sm" 
+  [t-title]="Excluir" 
+  [t-primary-action]="deleteAction">
+
+  <div class="thf-font-text-large thf-text-left">Deseja excluir o usuário?</div>
+
+</thf-modal>

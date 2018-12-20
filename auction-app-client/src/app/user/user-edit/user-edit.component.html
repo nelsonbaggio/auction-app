@@ -1,0 +1,26 @@
+<thf-page-default [t-actions]="pageActions">
+  <div class="thf-row">
+    <div class="thf-lg-6 thf-offset-lg-3 thf-xl-6 thf-offset-xl-3">
+      <form #formUser="ngForm">
+        <div class="thf-row">
+          <thf-input class="thf-md-12" name="name" [(ngModel)]="user.name" t-clean t-label="Nome" t-minlength="3"
+            t-placeholder="Nome" t-required>
+          </thf-input>
+          <thf-input class="thf-md-12" name="username" [(ngModel)]="user.username" t-clean t-label="Nome do Usuário" t-minlength="3"
+            t-placeholder="Nome do Usuário" t-required>
+          </thf-input>
+          <thf-email class="thf-md-6" name="email" [(ngModel)]="user.email" t-clean t-label="Email" t-placeholder="Email"
+            t-required>
+          </thf-email>
+          <thf-input class="thf-md-6" name="cpf" [(ngModel)]="user.cpf" t-clean t-label="CPF" t-placeholder="CPF"
+             t-required>
+          </thf-input>
+          <thf-input [hidden]="isEdit" class="thf-md-6" name="password" [(ngModel)]="user.password" t-clean t-label="Senha"
+            t-placeholder="Senha" t-required>
+          </thf-input>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</thf-page-default>
