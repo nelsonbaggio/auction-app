@@ -18,3 +18,5 @@
 - Busca nas paginas de CRUD
 - Documentação das APIs (swagger)
 - I18n
+
+Uma nova alteração!
